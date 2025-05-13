@@ -1,0 +1,60 @@
+
+body {
+  background-color: #1a1a2e;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #00f0ff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.visualization {
+  margin-bottom: 20px;
+}
+
+#cymaticCanvas {
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+}
+
+.info-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.info-item {
+  background-color: #2a2a4e;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  color: #ffeb3b;
+}
+
+#glyphStream {
+  font-size: 20px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
